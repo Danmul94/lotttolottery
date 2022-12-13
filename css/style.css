@@ -1,0 +1,200 @@
+
+body {
+    width: 100%;
+    min-width: 320px;
+}
+
+
+:root {
+    --swiper-navigation-size: 44px;
+}
+:root {
+    --swiper-theme-color: #007aff;
+}
+:root {
+    --color-gray901s: #191919;
+    --color-gray900s: #191919;
+    --color-gray850s: #333;
+    --color-gray800a: rgba(0,0,0,0.7);
+    --color-gray800s: #4c4c4c;
+    --color-gray750s: #555;
+    --color-gray700a: rgba(0,0,0,0.6);
+    --color-gray700s: #666;
+    --color-gray600s: #7f7f7f;
+    --color-gray600a: rgba(0,0,0,0.5);
+    --color-gray550s: #8e8e8e;
+    --color-gray500s: #999;
+    --color-gray400a: rgba(0,0,0,0.3);
+    --color-gray400s: #b2b2b2;
+    --color-gray350s: #ddd;
+    --color-gray300s: #ccc;
+    --color-gray300a: rgba(0,0,0,0.2);
+    --color-gray250s: #ddd;
+    --color-gray200a: rgba(0,0,0,0.14);
+    --color-gray120a: rgba(0,0,0,0.1);
+    --color-gray100a: rgba(0,0,0,0.08);
+    --color-gray100s: #ebebeb;
+    --color-gray070a: rgba(0,0,0,0.06);
+    --color-gray060a: rgba(0,0,0,0.05);
+    --color-gray060s: #f3f3f3;
+    --color-gray050a: rgba(0,0,0,0.04);
+    --color-gray050s: #f5f5f5;
+    --color-gray030a: rgba(0,0,0,0.03);
+    --color-gray030s: #f0f0f0;
+    --color-gray000a: rgba(0,0,0,0.02);
+    --color-gray000s: #fafafa;
+    --color-white800a: rgba(255,255,255,0.7);
+    --color-white002s: #fff;
+    --color-white001s: #fff;
+    --color-white000s: #fff;
+    --color-yellow500s: #fee500;
+    --color-yellow600s: #f4dc00;
+    --color-red500s: #e65f3e;
+    --color-blue900s: #001949;
+    --color-blue600s: #3069d3;
+    --color-blue500a: rgba(50,110,220,0.06);
+    --color-blue500s: #326edc;
+    --color-blue400s: #2c88de;
+    --color-blue050s: #e8f0fc;
+}
+
+
+.title {
+    position: absolute;
+    font-family: 'Im_Hyemin-Bold';
+    font-size: 28px;
+    text-align: center;
+    margin-left: 31%;
+}
+
+.rottoNum_wrap {
+    left: 500px;
+    display: inline-block;
+    font-size: 50px;
+    text-align: center;
+    position: absolute;
+}
+
+.content{
+    position: absolute;
+    margin-left: 28%;
+}
+    
+
+.ball span {
+    display: block;
+    font-size: 50px;
+    text-align: auto;
+    line-height: auto;
+    margin: 0 auto;
+    position: absolute;
+    
+}
+
+
+
+.btn_wrap {
+    width: auto;
+    height: auto;
+    left: 530px;
+    margin-right: 150px;
+    text-align: center;
+    margin-top: 20%;
+    position: absolute;
+       
+}
+
+
+
+.ball1 {
+    background-color: yellow;
+    width: 40px;
+    height:40px;
+    margin: 100px 10px 100px auto;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: auto;
+    font-size: 2rem; 
+    
+}
+
+.ball2 {
+    background-color: deepskyblue;
+    width: 40px;
+    height:40px;
+    margin: 200px 10px 200px auto;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: auto;
+    font-size: 2rem; 
+   
+}
+
+.ball3 {
+    background-color: rgb(28, 248, 54);
+    width: 40px;
+    height:40px;
+    margin: 200px 10px 200px auto;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: auto;
+    font-size: 2rem;  
+    
+}
+
+.ball4 {
+    background-color: rgb(250, 94, 21);
+    width: 40px;
+    height:40px;
+    margin: 200px 10px 200px auto;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: auto;
+    font-size: 2rem; 
+}
+
+.ball5 {
+    background-color: rgb(244, 35, 35);
+    width: 40px;
+    height:40px;
+    margin: 100px 10px 100px auto;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: auto;
+    font-size: 2rem; 
+}
+
+.ball6 {
+    background-color: rgb(200, 58, 236);
+    width: 40px;
+    height:40px;
+    margin: 100px 10px 100px auto;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    font-size: 2rem; 
+    
+    
+}
+
+.admob{
+    margin-left: 100px;
+    margin-top: 0px;
+}
+
+.all-banner{
+    position: sticky;
+    width: auto;
+    height: auto;
+}
+
+.news_banner{
+    position: absolute;
+    margin-top: 25%;
+
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko" class="all">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로또 추첨기 </title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+
+</head>
+
+<body>
+
+
+    <div class="adkaka">
+
+        <ins class="kakao_ad_area" style="display:none;"
+data-ad-unit = "DAN-JvLI3oq1d83eFvV6"
+data-ad-width = "320"
+data-ad-height = "100"></ins>
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+
+        <ins class="kakao_ad_area" style="display:none;"
+data-ad-unit = "DAN-w54bwIIpgnDq3ld1"
+data-ad-width = "300"
+data-ad-height = "250"></ins>
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+
+
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '282135873128567');
+    fbq('track', 'PageView');
+  </script>
+
+
+</div>
+        <header>
+            <h2 class="title">로또 번호 추첨기</h2>
+        </header>
+       
+
+
+        <div class="content">
+            <div class="rottoNum_wrap"></div>
+
+            <div class="ball1" id="num1">
+                <span>?
+
+                </span>
+
+            </div>
+            <div class="ball2" id="num2">
+                <span>?
+
+                </span>
+
+            </div>
+            <div class="ball3" id="num3">
+                <span>?
+
+                </span>
+
+            </div>
+            <div class="ball4" id="num4">
+                <span>?
+
+                </span>
+
+            </div>
+            <div class="ball5" id="num5">
+                <span>?
+
+                </span>
+
+            </div>
+            <div class="ball6" id="num6">
+                <span>?
+
+                </span>
+            </div>
+        </div>
+
+
+        <div class="btn_wrap">
+            <input class="btn" type="button" value="추첨하기" onclick="getNum()">
+        </div>
+
+        <div class="news_banner">
+            <a href="http://m.newspic.kr/view.html?nid=2022111402342865451&pn=600&cp=Q0zJw89T&utm_medium=affiliate&utm_campaign=2022111402342865451&utm_source=np211229Q0zJw89T"
+                target="_blank">"로또 20억 당첨된 아저씨"</a>
+            <a href="http://m.newspic.kr/view.html?nid=2022111322400115040&pn=571&cp=Q0zJw89T&utm_medium=affiliate&utm_campaign=2022111322400115040&utm_source=np211229Q0zJw89T"
+                target="_blank">"1041회 로또 1등당첨 근황"</a>
+            <a href="http://m.newspic.kr/view.html?nid=2022111401162642041&pn=596&cp=Q0zJw89T&utm_medium=affiliate&utm_campaign=2022111401162642041&utm_source=np211229Q0zJw89T"
+                target="_blank">"20세 때 로또1등 당첨된 청년 근황"</a>
+            <a href="http://m.newspic.kr/view.html?nid=2022111312115312230&pn=304&cp=Q0zJw89T&utm_medium=affiliate&utm_campaign=2022111312115312230&utm_source=np211229Q0zJw89T"
+                target="_blank">"로또 1등 당첨 된 대학생 1년 반 뒤 후기"</a>
+            <a href="http://m.newspic.kr/view.html?nid=2022111301200189102&pn=571&cp=Q0zJw89T&utm_medium=affiliate&utm_campaign=2022111301200189102&utm_source=np211229Q0zJw89T"
+                target="_blank">"로또 당첨 판매점 중복 당첨 많음+2등 추가"</a> <br><br>
+            <a href="http://m.newspic.kr/view.html?nid=2022111215574712410&pn=596&cp=Q0zJw89T&utm_medium=affiliate&utm_campaign=2022111215574712410&utm_source=np211229Q0zJw89T"
+                target="_blank">"로또 당첨자가 제일 많이 하는 고민"</a>
+            <a href="http://m.newspic.kr/view.html?nid=2022111107350236693&pn=573&cp=Q0zJw89T&utm_medium=affiliate&utm_campaign=2022111107350236693&utm_source=np211229Q0zJw89T"
+                target="_blank">"대한민국 로또 당첨자 중 레전드 1등"</a>
+            <a href="http://m.newspic.kr/view.html?nid=2022110917000005799&pn=137&cp=Q0zJw89T&utm_medium=affiliate&utm_campaign=2022110917000005799&utm_source=np211229Q0zJw89T"
+                target="_blank">"로또사면 꼭! 하는 말"</a>
+        </div>
+
+
+
+
+        
+
+    </div>
+
+
+    <script>
+        function getNum() {
+            let ball = document.getElementsByClassName("ball");
+            //class이름이 ball인 요소 가져오기
+            //추첨 후에, 또 추첨하기 버튼을 누르면 이전에 들어간 번호가 남아있어
+            //초기화 해주기 위한 부분
+            for (let i = 0; i < ball.length; i++) {
+                ball[i].innerHTML = '<span>?</span>';
+                //for문 돌리며 ball 안의 텍스트 ?로 넣기
+            }
+            let rottoNum = [];
+            //추첨한 로또 번호를 담을 배열
+            for (let i = 0; i < 6; i++) {
+                rottoNum[i] = Math.floor(Math.random() * 45) + 1;
+                //랜덤함수를 통해 랜덤으로 번호생성
+                //추첨된 번호가 중복됐을 시, 재추첨하기
+                for (let j = 0; j < i; j++) {
+                    if (rottoNum[i] == rottoNum[j]) {
+                        i--;
+                        break;
+                    }
+                }
+            }
+            rottoNum.sort(function (a, b) {
+                return a - b;
+            });
+            for (let i = 0; i < rottoNum.length; i++) {
+                let ball = document.getElementById("num" + (i + 1));
+                // setTimeout()함수를 이용하여, 1초마다 실행되도록 함
+                setTimeout(function () {
+                    ball.innerHTML = `<span>${rottoNum[i]}
+  </span`;
+                }
+                    , i * 1500);
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>
