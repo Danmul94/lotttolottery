@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="ko" class="all">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>로또 추첨기 </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 
 
@@ -13,6 +14,7 @@
 
 <body>
 
+    <container class="save">
 
     <div class="adkaka">
 
@@ -22,12 +24,17 @@ data-ad-width = "320"
 data-ad-height = "100"></ins>
 <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
 
-        <ins class="kakao_ad_area" style="display:none;"
-data-ad-unit = "DAN-w54bwIIpgnDq3ld1"
-data-ad-width = "300"
-data-ad-height = "250"></ins>
-<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+  
+<script>
+    window.dataLayer = window.dataLayer || [];
 
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-145482737-6');
+</script>
+<script data-ad-client="ca-pub-2962790403778987" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 <script>
     !function(f,b,e,v,n,t,s)
@@ -94,6 +101,7 @@ data-ad-height = "250"></ins>
         <div class="btn_wrap">
             <input class="btn" type="button" value="추첨하기" onclick="getNum()">
         </div>
+    </container>
 
         <div class="news_banner">
             <a href="http://m.newspic.kr/view.html?nid=2022111402342865451&pn=600&cp=Q0zJw89T&utm_medium=affiliate&utm_campaign=2022111402342865451&utm_source=np211229Q0zJw89T"
@@ -113,13 +121,7 @@ data-ad-height = "250"></ins>
             <a href="http://m.newspic.kr/view.html?nid=2022110917000005799&pn=137&cp=Q0zJw89T&utm_medium=affiliate&utm_campaign=2022110917000005799&utm_source=np211229Q0zJw89T"
                 target="_blank">"로또사면 꼭! 하는 말"</a>
         </div>
-
-
-
-
-        
-
-    </div>
+</div>
 
 
     <script>
@@ -153,12 +155,18 @@ data-ad-height = "250"></ins>
                 // setTimeout()함수를 이용하여, 1초마다 실행되도록 함
                 setTimeout(function () {
                     ball.innerHTML = `<span>${rottoNum[i]}
-  </span`;
+</span`;
                 }
                     , i * 1500);
             }
         }
     </script>
+
+<ins class="kakao_ad_area" style="display:none;"
+data-ad-unit = "DAN-w54bwIIpgnDq3ld1"
+data-ad-width = "300"
+data-ad-height = "250"></ins>
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
 
 
 
