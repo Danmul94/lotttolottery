@@ -1,5 +1,7 @@
 
 body {
+    margin: 0 auto;
+    position: relative;
     width: 100%;
     height: 100%;
     display: flex;
@@ -61,15 +63,14 @@ body {
 
 
 .title {
-    position: absolute;
-    font-family: 'Im_Hyemin-Bold';
-    font-size: 28px;
+    position: relative;
+    font-size: 30px;
     text-align: center;
-    margin-left: 31%;
+    
 }
 
 .rottoNum_wrap {
-    left: 500px;
+    margin: 0 auto;
     display: inline-block;
     font-size: 50px;
     text-align: center;
@@ -77,9 +78,10 @@ body {
 }
 
 .content{
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    width: 110%;
+    height: 50%;
     display: block;
     
 }
@@ -91,7 +93,7 @@ body {
     text-align: auto;
     line-height: auto;
     margin: 0 auto;
-    position: absolute;
+    position:relative;
     
 }
 
@@ -100,13 +102,10 @@ body {
 .btn_wrap {
     height: auto;
     text-align: center;
-    margin-top: 35%;
-    position: sticky;
+    position: relative;
     width: 300px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 110%;
+    margin: 0 auto;
 }
 
 
@@ -176,16 +175,15 @@ body {
 }
 
 .ball6 {
-    background-color: rgb(200, 58, 236);
+    background-color: rgb(244, 35, 35);
     width: 40px;
     height:40px;
     margin: 100px 10px 100px auto;
     border-radius: 50%;
     display: inline-block;
     text-align: center;
+    line-height: auto;
     font-size: 2rem; 
-    
-    
 }
 
 .admob{
@@ -193,19 +191,14 @@ body {
     margin-top: 0px;
 }
 
-.all-banner{
-    position: sticky;
-    width: auto;
-    height: auto;
-}
-
 .news_banner{
-    position: absolute;
-    margin-top: 110%;
+    position: relative;
+    
+
 
 }
 
 .save{
-    columns: 12;
-    offset: center;
+    position: relative;
+    margin: 0 auto;
 }
